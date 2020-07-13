@@ -1,0 +1,11 @@
+<!-- Presentation component template for displying product-->
+<h1>Products</h1>
+<table>
+  <tbody>
+    <!-- Implementing structural directive to iterate the produvt id list-->
+    <tr *ngFor="let product of products">
+      <!-- string interpolation to display the data -->
+      <td><a [routerLink]="'/product/'+product.id">{{product.id}}</a></td>
+    </tr>
+  </tbody>
+</table>
